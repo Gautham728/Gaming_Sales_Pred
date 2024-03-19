@@ -1,8 +1,8 @@
 import streamlit as st
 
-st.title('Visualisation PowerBI')
+st.title('Visualisation ')
 
-st.markdown('Analyse du DataFrame d\'origine et du DataFrame final')
+st.markdown('Analyse the DataFrame ')
 
 # Personnalisation CSS pour agrandir l'iframe
 css = """
@@ -18,5 +18,5 @@ css = """
 st.markdown(css, unsafe_allow_html=True)
 
 # Affichage de l'iframe contenant le rapport Power BI
-st.components.v1.iframe("https://app.powerbi.com/reportEmbed?reportId=a3a4cd49-8798-4a3e-b348-1368b89c7192&autoAuth=true&embeddedDemo=true")
+st.components.v1.iframe("https://public.tableau.com/app/profile/gautham.acharya/viz/Gamingsalesdashboard/Dashboard1")
 
