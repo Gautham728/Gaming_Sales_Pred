@@ -13,25 +13,25 @@ pages = st.sidebar.radio("Contents",options = ['Introduction','Visualization','C
 #st.sidebar.image("C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/datascientest.png")
 
 
-with open('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/models/dtc.pkl', 'rb') as model_file:
+with open('models/dtc.pkl', 'rb') as model_file:
   dtc = pickle.load(model_file)
 
-with open('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/models/knn_clf.pkl', 'rb') as model_file:
+with open('models/knn_clf.pkl', 'rb') as model_file:
   knn_clf = pickle.load(model_file)
 
-with open('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/models/dtr.pkl', 'rb') as model_file:
+with open('models/dtr.pkl', 'rb') as model_file:
   dtr = pickle.load(model_file)
 
-with open('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/models/knn_reg.pkl', 'rb') as model_file:
+with open('models/knn_reg.pkl', 'rb') as model_file:
   knn_reg = pickle.load(model_file)
 
 
-df = pd.read_csv('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/csv_file.csv')
+df = pd.read_csv('csv_file.csv')
 
 # Classification
-X = pd.read_csv('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/models/X.csv')
-Y_clf = pd.read_csv('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/models/clf_Y.csv')
-Y_reg = pd.read_csv('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/models/reg_Y.csv')
+X = pd.read_csv('models/X.csv')
+Y_clf = pd.read_csv('models/clf_Y.csv')
+Y_reg = pd.read_csv('models/reg_Y.csv')
 
 
 if pages == 'Introduction':
@@ -41,7 +41,7 @@ if pages == 'Introduction':
     with col1:
          st.write("")
     with col2:
-         st.image('C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/games.png', width = 500)
+         st.image('games.png', width = 500)
     with col3 :
          st.write("")
     
