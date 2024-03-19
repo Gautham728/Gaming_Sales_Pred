@@ -60,7 +60,7 @@ if pages == 'Introduction':
             </div>""", unsafe_allow_html=True)
     
 if pages == 'Visualization':
-    st.title('Visualization with PowerBI')
+    st.title('Visualization with Tableau')
 
     st.subheader('Initial & web scraping upgraded dataframe visualization')
 
@@ -78,7 +78,7 @@ if pages == 'Visualization':
     st.markdown(css, unsafe_allow_html=True)
 
     # Affichage de l'iframe contenant le rapport Power BI
-    st.components.v1.iframe("https://app.powerbi.com/reportEmbed?reportId=a3a4cd49-8798-4a3e-b348-1368b89c7192&autoAuth=true&embeddedDemo=true")
+    st.components.v1.iframe("https://public.tableau.com/app/profile/gautham.acharya/viz/Gamingsalesdashboard/Dashboard1")
     # Login :   GregoireApostoloff@DataWorld606.onmicrosoft.com
     # Mdp :     #44f4#NCFpDxrLct
 
