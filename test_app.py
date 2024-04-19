@@ -61,7 +61,7 @@ if pages == 'Introduction':
     
 if pages == 'Recommendation':
     st.title('Gaming Recommendation')
-    st.image('games.png', width = 500)
+    st.image('spidy.jpg', width = 500)
     st.markdown("""<div style="text-align: justify;"> \
         Game <a href="https://gamingrecommend-dvwmimq6o7s3gxfuzkikrp.streamlit.app/">Recommendation</a> involves suggesting games to users based on their preferences, playing history, and similarities with other games,\
         It uses algorithms to analyze data such as game genres, publisher, and gameplay characteristics to make personalized recommendations, enhancing user experience and engagement in the gaming ecosystem.\
