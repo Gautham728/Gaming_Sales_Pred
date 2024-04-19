@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 import pickle
 import joblib
-
+import webbrowser
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import MinMaxScaler
 
 st.sidebar.subheader("Gaming Sales")
-pages = st.sidebar.radio("Contents",options = ['Introduction','Visualization','Classification','Regression'])
+pages = st.sidebar.radio("Contents",options = ['Introduction','Recommendation','Classification','Regression'])
 
 #st.sidebar.image("C:/Users/User/Desktop/gaming/GamingProjectSalesStreamlit-main/datascientest.png")
 
@@ -59,26 +59,35 @@ if pages == 'Introduction':
                               
             </div>""", unsafe_allow_html=True)
     
-if pages == 'Visualization':
-    st.title('Visualization with Tableau')
+if pages == 'Recommendation':
+    st.title('Gaming Recommendation')
+    st.markdown("""<div style="text-align: justify;"> \
+            Game recommendation involves suggesting games to users based on their preferences, playing history, and similarities with other games,\ 
+            It uses algorithms to analyze data such as game genres, publisher, and gameplay characteristics to make personalized recommendations, enhancing user experience and engagement in the gaming ecosystem.\
+                  
+            </div>""", unsafe_allow_html=True)
+    link_url="https://gamingrecommend-dvwmimq6o7s3gxfuzkikrp.streamlit.app/"
+  if st.button("Recommend"):
+    # Open the link in a new tab when the button is clicked
+    webbrowser.open_new_tab(link_url)
 
-    st.subheader('Initial & web scraping upgraded dataframe visualization')
+    #st.subheader('Initial & web scraping upgraded dataframe visualization')
 
     # Personnalisation CSS pour agrandir l'iframe
-    css = """
-        <style>
-        iframe {
-            width: 150%;
-            height: 600px;
-        }
-        </style>
+   # css = """
+        #<style>
+        #iframe {
+           # width: 150%;
+            #height: 600px;
+       # }
+       # </style>
         """
 
     # Affichage du CSS personnalisé
-    st.markdown(css, unsafe_allow_html=True)
+    #st.markdown(css, unsafe_allow_html=True)
 
     # Affichage de l'iframe contenant le rapport Power BI
-    st.components.v1.iframe("https://public.tableau.com/app/profile/gautham.acharya/viz/Gamingsalesdashboard/Dashboard1")
+    #st.components.v1.iframe("https://public.tableau.com/app/profile/gautham.acharya/viz/Gamingsalesdashboard/Dashboard1")
     # Login :   GregoireApostoloff@DataWorld606.onmicrosoft.com
     # Mdp :     #44f4#NCFpDxrLct
 
