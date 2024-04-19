@@ -82,7 +82,7 @@ if pages == 'Recommendation':
             #height: 600px;
        # }
        # </style>
-        """
+        
 
     # Affichage du CSS personnalisé
     #st.markdown(css, unsafe_allow_html=True)
