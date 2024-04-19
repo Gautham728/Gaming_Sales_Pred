@@ -62,15 +62,15 @@ if pages == 'Introduction':
 if pages == 'Recommendation':
     st.title('Gaming Recommendation')
     st.markdown("""<div style="text-align: justify;"> \
-            Game recommendation involves suggesting games to users based on their preferences, playing history, and similarities with other games,\ 
-            It uses algorithms to analyze data such as game genres, publisher, and gameplay characteristics to make personalized recommendations, enhancing user experience and engagement in the gaming ecosystem.\
-                  
-            </div>""", unsafe_allow_html=True)
-    link_url="https://gamingrecommend-dvwmimq6o7s3gxfuzkikrp.streamlit.app/"
+        Game recommendation involves suggesting games to users based on their preferences, playing history, and similarities with other games,\
+        It uses algorithms to analyze data such as game genres, publisher, and gameplay characteristics to make personalized recommendations, enhancing user experience and engagement in the gaming ecosystem.\
+              
+        </div>""", unsafe_allow_html=True)
+    link_url = "https://gamingrecommend-dvwmimq6o7s3gxfuzkikrp.streamlit.app/"
     if st.button("Recommend"):
-      
-    # Open the link in a new tab when the button is clicked
-      webbrowser.open_new_tab(link_url)
+        # Open the link in a new tab when the button is clicked
+        webbrowser.open_new_tab(link_url)
+
 
     #st.subheader('Initial & web scraping upgraded dataframe visualization')
 
