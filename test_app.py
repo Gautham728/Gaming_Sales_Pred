@@ -41,7 +41,7 @@ if pages == 'Introduction':
     with col1:
          st.write("")
     with col2:
-         st.image('unamed.png', width = 500)
+         st.image('unnamed.png', width = 500)
     with col3 :
          st.write("")
     
