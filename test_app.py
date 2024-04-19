@@ -67,9 +67,10 @@ if pages == 'Recommendation':
                   
             </div>""", unsafe_allow_html=True)
     link_url="https://gamingrecommend-dvwmimq6o7s3gxfuzkikrp.streamlit.app/"
-  if st.button("Recommend"):
+    if st.button("Recommend"):
+      
     # Open the link in a new tab when the button is clicked
-    webbrowser.open_new_tab(link_url)
+      webbrowser.open_new_tab(link_url)
 
     #st.subheader('Initial & web scraping upgraded dataframe visualization')
 
